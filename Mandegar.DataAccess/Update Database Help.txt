@@ -1,0 +1,3 @@
+﻿1- Add-Migration -OutputDir Migrations -Context MandegarDbContext
+2- update-database -Context MandegarDbContext
+

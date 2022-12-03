@@ -1,0 +1,20 @@
+﻿@model Mandegar.Models.ViewModels.Account.EmailUserActiveCodeVM
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_SendEmailActiveUser</title>
+</head>
+<body>
+    <p>
+        @Model.Email عزیز!
+    </p>
+    جهت تائید عضویت روی لینک زیر کلیک نمائید:
+    <br />
+    <a href="@Model.Domain/confirm-registration/@Model.ActiveCode">تائید عضویت</a>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20220224164642_Initial.cs" />
+    <Compile Include="Migrations\20220224164642_Initial.Designer.cs" />
+    <Compile Include="Migrations\20220224191919_delete-relation.cs" />
+    <Compile Include="Migrations\20220224191919_delete-relation.Designer.cs" />
+    <Compile Include="Migrations\20220225135622_addprimarykey.cs" />
+    <Compile Include="Migrations\20220225135622_addprimarykey.Designer.cs" />
+    <Compile Include="Migrations\20220226105646_Change_Staff_Family_Table.cs" />
+    <Compile Include="Migrations\20220226105646_Change_Staff_Family_Table.Designer.cs" />
+    <Compile Include="Migrations\20220226121357_Chnage_Cooperation.cs" />
+    <Compile Include="Migrations\20220226121357_Chnage_Cooperation.Designer.cs" />
+    <Compile Include="Migrations\20220226145810_Change_Sacrifice.cs" />
+    <Compile Include="Migrations\20220226145810_Change_Sacrifice.Designer.cs" />
+    <Compile Include="Migrations\20220301130519_Change_Lesson_And_DepartmentSchedule.cs" />
+    <Compile Include="Migrations\20220301130519_Change_Lesson_And_DepartmentSchedule.Designer.cs" />
+    <Compile Include="Migrations\20220301142302_Department_Activity.cs" />
+    <Compile Include="Migrations\20220301142302_Department_Activity.Designer.cs" />
+    <Compile Include="Migrations\20220303095009_AddNewEntity.cs" />
+    <Compile Include="Migrations\20220303095009_AddNewEntity.Designer.cs" />
+    <Compile Include="Migrations\20220303101959_add-property.cs" />
+    <Compile Include="Migrations\20220303101959_add-property.Designer.cs" />
+    <Compile Include="Migrations\20220303111228_ChangeEntity.cs" />
+    <Compile Include="Migrations\20220303111228_ChangeEntity.Designer.cs" />
+    <Compile Include="Migrations\20220303123940_ChangeNavigation.cs" />
+    <Compile Include="Migrations\20220303123940_ChangeNavigation.Designer.cs" />
+    <Compile Include="Migrations\20220303171909_Change-EntityFK.cs" />
+    <Compile Include="Migrations\20220303171909_Change-EntityFK.Designer.cs" />
+    <Compile Include="Migrations\20220308162420_removerstudydegreeid.cs" />
+    <Compile Include="Migrations\20220308162420_removerstudydegreeid.Designer.cs" />
+    <Compile Include="Migrations\MandegarDbContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Parbad.AspNetCore" Version="1.2.0" />
+    <PackageReference Include="Parbad.Storage.EntityFrameworkCore" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mandegar.Models\Mandegar.Models.csproj" />
+    <ProjectReference Include="..\Mandegar.Utilities\Mandegar.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

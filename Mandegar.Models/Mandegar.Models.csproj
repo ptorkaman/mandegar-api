@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Category\**" />
+    <Compile Remove="Entities\Seller\**" />
+    <Compile Remove="Entities\Service\**" />
+    <EmbeddedResource Remove="Entities\Category\**" />
+    <EmbeddedResource Remove="Entities\Seller\**" />
+    <EmbeddedResource Remove="Entities\Service\**" />
+    <None Remove="Entities\Category\**" />
+    <None Remove="Entities\Seller\**" />
+    <None Remove="Entities\Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JqueryDataTables.ServerSide.AspNetCoreWeb" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.13" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.2.88" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mandegar.Resources\Mandegar.Resources.csproj" />
+    <ProjectReference Include="..\Mandegar.Utilities\Mandegar.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\Common\" />
+  </ItemGroup>
+
+</Project>
